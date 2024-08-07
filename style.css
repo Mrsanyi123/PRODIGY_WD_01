@@ -1,0 +1,118 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Poppins', sans-serif;
+    box-sizing: border-box;
+}
+.background {
+    width: 100%;
+    min-height: 100vh;
+    background-image: linear-gradient(rgba(9,0,77,0.65),rgba(9,0,77,0.65)),url(back.jpg);
+    background-size: cover;
+    background-position: center;
+    padding: 10px 8%;
+}
+nav {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 2px 100px;
+    backdrop-filter: blur(10px);
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); 
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 100;
+}
+
+.logo {
+    display: flex;
+    width: 50%;
+    height: auto;
+    cursor: pointer;
+    color: #fff;
+}
+.logo h1 {
+    padding: 18px 10px;
+    font-size: 25px;
+}
+.logo img {
+    width: 50px;
+    border-radius: 30px;
+    font-size: 20px;
+    margin: 10px 0px;  
+}
+nav ul {
+    list-style: none;
+    width: 100%;
+    text-align: right;
+    padding-right: 70px;
+}
+nav ul li {
+    font-size: 18px;
+    display: inline-block;
+    padding: 6px 20px;
+    position: relative;
+}
+nav ul li a {
+    color: #fff;
+    text-decoration: none;
+    transition: 0.4s;
+}
+nav ul li a span {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+    border-bottom: 2px solid #00fff7;
+    border-radius: 15px;
+    transform: scale(0) translateY(50px);
+    opacity: 0;
+    transition: .5s;
+}
+
+.button {
+    display: flex;
+    align-items: center;
+    padding: 10px 20px;
+    border: 0;
+    outline: 0;
+    border-radius: 5px;
+    background-color: #19244a;
+    color: #fff;
+    font-weight: 400;
+    cursor: pointer;
+    transition: 0.4s;
+}
+
+.contents {
+    align-items: center;
+    margin-top: 20%;
+}
+.contents h1 {
+    font-size: 38px;
+    line-height: 50px;
+    color: #fff;
+    font-weight: 700;
+    font-size: 45px;
+    line-height: 60px;
+    text-align: center;
+    margin-bottom: 30px;
+}
+.contents p {
+    font-size: 20px;
+    line-height: 35px;
+    text-align: center;
+    color: #fff;
+    opacity: 0.7;
+    max-width: 600px;
+    margin: auto;
+}
+.about img {
+    width: 100%;
+    min-height: 100vh;
+    background-size: cover;
+}
